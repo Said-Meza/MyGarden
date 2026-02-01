@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+.coming-soon-regular {
+    font-family: "Coming Soon", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+  --azul-primario: #1E5AA8;
+  --azul-secundario: #0B3C78;
+
+  --verde-oscuro: #2E7D32;
+  --verde-medio: #4CAF50;
+  --verde-claro: #A5D6A7;
+  --verde-claro--claro: #c8eac9;
+
+  --blanco-fondo: #f5f7f6;
+  --gris-texto: #333333;
+}
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Coming Soon;
+  background-color: var(--verde-claro--claro);
+  color: var(--gris-texto);
+  line-height: 1.6;
+}
+
+
+.container {
+    /* outline: auto; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 70px;
+    background-color: var(--verde-medio);
+}
+.header_logo{
+    width:90px;
+    height: 90px;
+
+}
+.header_img_logo{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_menu {
+    position: relative;
+
+}
+
+.header_label {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.header_label:hover {
+    transform: scale(1.2);
+}
+
+.header_figure {
+    width: 30px;
+    height: 30px;
+}
+
+.header_img {
+    display: block;
+    width: 100%;
+}
+
+.header_checkbox {
+    display: none;
+}
+
+.header_ul {
+    /* display: none; */
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+   
+    background: var(--verde-claro);
+    list-style: none;
+    padding: 10px;
+
+    transform: translateX(-150%);
+    transition: transform 0.7s ease;
+}
+
+.header_checkbox:checked~.header_ul {
+    transform: translateX(0);
+
+}
+
+.header_nav_list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.header_a {
+     color: var(--gris-texto);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+.planta {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: var(--blanco-fondo);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   TÍTULO
+========================= */
+.planta_titulo {
+  margin-top: 0;
+  font-size: 2.4rem;
+  color: var(--azul-secundario);
+  border-bottom: 4px solid var(--verde-medio);
+  padding-bottom: 10px;
+}
+
+/* =========================
+   IMAGEN
+========================= */
+.planta_imagen {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.planta_imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid var(--verde-claro);
+}
+
+.planta_imagen figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+.planta_seccion {
+  margin-bottom: 30px;
+}
+
+.planta_seccion h2 {
+  color: var(--verde-oscuro);
+  border-left: 6px solid var(--verde-medio);
+  padding-left: 10px;
+  font-size: 1.4rem;
+}
+
+.planta_seccion p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* =========================
+   BOTÓN REGRESAR
+========================= */
+.btn_regresar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: var(--verde-oscuro);
+  color: var(--verde-claro--claro);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn_regresar:hover {
+  background-color: var(--verde-claro);
+  color: var(--gris-texto);
+}
+
+/* =========================
+   RESPONSIVE BÁSICO
+========================= */
+@media (max-width: 600px) {
+  .planta {
+    padding: 20px;
+  }
+
+  .planta_titulo {
+    font-size: 2rem;
+  }
+}
