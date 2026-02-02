@@ -43,6 +43,7 @@ body {
 }
 
 .header {
+  min-width: 250px;
     height: 70px;
     background-color: var(--verde-medio);
 }
@@ -139,6 +140,7 @@ body {
 ========================= */
 .planta {
   width: 90%;
+  min-width: 250px;
   max-width: 900px;
   margin: 50px auto;
   padding: 30px;
