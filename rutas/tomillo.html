@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Tomillo</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f7f6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #6b8e23;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #6b8e23;
+      margin-top: 25px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #e0e0e0;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+     .btn_regresar {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background-color: green;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn_regresar:hover {
+        background-color: rgb(11, 248, 11);
+        color: yellow;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>El Tomillo</h1>
+    <p>Una hierba aromática llena de beneficios</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué es el tomillo?</h2>
+      <p>
+        El tomillo es una planta aromática muy utilizada en la cocina y en la
+        medicina tradicional. Se caracteriza por su aroma intenso y su sabor
+        ligeramente picante.
+      </p>
+      <img src="data:image/jpeg;base64,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" alt="">
+    </section>
+
+    <section>
+      <h2>Características principales</h2>
+      <ul>
+        <li>Planta perenne de hojas pequeñas y verdes.</li>
+        <li>Aroma fuerte y agradable.</li>
+        <li>Sabor intenso, ideal para carnes y guisos.</li>
+        <li>Crece en climas secos y soleados.</li>
+      </ul>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYjTlNvSDFXl0xsAcle2KU66LoMQWzYlrhw&s" alt="">
+    </section>
+
+    <section>
+      <h2>Usos del tomillo</h2>
+      <ul>
+        <li>Condimento en la cocina.</li>
+        <li>Infusiones para aliviar la tos y el dolor de garganta.</li>
+        <li>Uso medicinal por sus propiedades antibacterianas.</li>
+        <li>Aromaterapia y remedios naturales.</li>
+      </ul>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSF9-B-yHr_rU0bv0lT6Aco30fiIA1LbNQzw&s" alt="">
+    </section>
+
+    <section>
+      <h2>Beneficios</h2>
+      <p>
+        El tomillo ayuda a mejorar la digestión, fortalece el sistema
+        respiratorio y tiene propiedades antioxidantes.
+      </p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2aJoElOeLqvZZ3MwCta8xBplsunBykBc4lw&s" alt="">
+    </section>
+  </main>
+
+  <a class="btn_regresar" href="../index.html">← Regresar al huerto</a>
+
+  <footer>
+    <p>&copy; 2026 - Página informativa sobre el tomillo</p>
+    <p>Creado por Jonathan Elí Morales Reyes<p> 
+    
+  </footer>
+</body>
+</html>
+
