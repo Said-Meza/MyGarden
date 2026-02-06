@@ -189,7 +189,7 @@ body{
 }
 
 .main_seccion1 {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -565,10 +565,7 @@ body{
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
     }
 
-
-
-
-
+    
 
     .section1_card {
 
@@ -645,7 +642,9 @@ body{
 }
 
 
-@media (width > 1023px) {
+@media (width > 1022px) {
+
+   
 
     .news_link:nth-child(2) {
         grid-column: span 1;
@@ -684,4 +683,12 @@ body{
     padding: .3rem 0;
    }
 
+}
+
+
+@media (width > 1022px){
+     .main_seccion1 {
+    max-width: 1200px;
+   
+}
 }
